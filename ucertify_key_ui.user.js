@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         ucertify Practice Exam Keyboard UI
 // @namespace    https://github.com/mattman00000/ucertify-key-ui
-// @version      0.0.2
+// @version      0.0.3
 // @description  adds left/right key for next/previous
 // @author       mattman00000
 // @match        https://www.ucertify.me/*
-// @grant        none
+// @grant        GM_log
 // ==/UserScript==
 
 (function() {
