@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ucertify Practice Exam Keyboard UI
 // @namespace    https://github.com/mattman00000/ucertify-key-ui
-// @version      0.0.4
+// @version      0.0.5
 // @description  adds left/right key for next/previous
 // @author       mattman00000
 // @match        https://www.ucertify.me/*
@@ -38,6 +38,6 @@
 										</div>\
 																	</div>\
 	");
-	document.getElementById("key-ui-hud").addEventListener("mouseleave",function(a){ document.getElementById("key-ui-hud").style.visibility="visible"; document.getElementById("key-ui-hud").style.zIndex = 9223372036854775807; });
-	document.getElementById("key-ui-hud").addEventListener("mouseenter",function(a){ document.getElementById("key-ui-hud").style.visibility="hidden"; document.getElementById("key-ui-hud").style.zIndex = -9223372036854775807; });
+	document.getElementById("key-ui-hud").addEventListener("mouseleave",function(a){ document.getElementById("key-ui-hud").style.visibility="visible";}); // document.getElementById("key-ui-hud").style.zIndex = 9223372036854775807; });
+	document.getElementById("key-ui-hud").addEventListener("mouseenter",function(a){ document.getElementById("key-ui-hud").style.visibility="hidden"; }); //document.getElementById("key-ui-hud").style.zIndex = -9223372036854775807; });
 })();
