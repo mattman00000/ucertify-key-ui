@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ucertify Practice Exam Keyboard UI
 // @namespace    https://github.com/mattman00000/ucertify-key-ui
-// @version      0.0.6
+// @version      0.0.7
 // @description  adds left/right key for next/previous
 // @author       mattman00000
 // @match        https://www.ucertify.me/*
@@ -11,8 +11,9 @@
 (function() {
 	'use strict';
 	// Your code here...
+	var myOpacity = "1";
 	document.body.insertAdjacentHTML("afterBegin","\
-	<div id=\"key-ui-hud\" style=\" margin: 2px; padding: 2px; position: fixed; left: 0px; bottom: 0px; opacity: 0.8;\" class=\"col-md-12 npl\">\
+	<div id=\"key-ui-hud\" style=\" margin: 2px; padding: 2px; position: fixed; left: 0px; bottom: 0px; opacity: "+myOpacity+"; z-index: 9223372036854775807; \" class=\"col-md-12 npl\">\
 					        												<div style=\" margin: 2px; padding: 2px;\" class=\"col-md-6 col-lg-6 col-sm-6\">\
 											<div style=\" margin: 2px; padding: 2px;\" class=\"mb-md\"><b>Help : </b><span class=\"key\">/</span></div>\
 											<div style=\" margin: 2px; padding: 2px;\" class=\"mb-md\"><b>Dashboard : </b><span class=\"key\">&lt;Esc&gt; then H</span></div>\
@@ -38,6 +39,6 @@
 										</div>\
 																	</div>\
 	");
-	document.getElementById("key-ui-hud").addEventListener("mouseleave",function(a){ document.getElementById("key-ui-hud").style.visibility="visible";}); // document.getElementById("key-ui-hud").style.zIndex = 9223372036854775807; });
-	document.getElementById("key-ui-hud").addEventListener("mouseenter",function(a){ document.getElementById("key-ui-hud").style.visibility="hidden"; }); //document.getElementById("key-ui-hud").style.zIndex = -9223372036854775807; });
+	document.getElementById("key-ui-hud").addEventListener("mouseleave",function(a){ document.getElementById("key-ui-hud").style.opacity=myOpacity;}); // document.getElementById("key-ui-hud").style.zIndex = 9223372036854775807; });
+	document.getElementById("key-ui-hud").addEventListener("mouseenter",function(a){ document.getElementById("key-ui-hud").style.opacity="0"; }); //document.getElementById("key-ui-hud").style.zIndex = -9223372036854775807; });
 })();
