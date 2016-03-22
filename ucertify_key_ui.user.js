@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         ucertify Practice Exam Keyboard UI
-// @namespace    https://github.com/mattman00000/ucertify-key-ui
+// @namespace    https://github.com/mattman00000
 // @version      0.1.2
 // @description  adds left/right key for next/previous
 // @author       mattman00000
